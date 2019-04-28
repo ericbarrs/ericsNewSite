@@ -1,0 +1,344 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  height: 100%;
+  width: 100%;
+}
+.card{
+  position: inherit;
+}
+.Home {
+  position: absolute;
+  z-index: -10;
+}
+.navBar {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: orange;
+  width: 100%;
+  max-width: 1200px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.logo {
+  font-family: "Cormorant", serif;
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.links {
+  padding: 0px;
+  margin: 0 15px;
+}
+
+.links li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+.section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.section-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.section-h1 {
+  font-family: "Cormorant", serif;
+  font-weight: lighter;
+  text-align: center;
+  z-index: 1;
+  color: orange;
+  font-size: 2em;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-links:hover {
+  background: -webkit-linear-gradient(white, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  transition: 0.5s;
+}
+
+.nav-links:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0;
+  opacity: 0;
+  background-image: white;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
+}
+.nav-links:hover:after {
+  background-image: linear-gradient(white, orange);
+  width: 100%;
+  opacity: 1;
+}
+.aw-arrow {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  opacity: 1;
+  border: solid orange;
+  border-width: 0 0.5px 0.5px 0;
+  transform: rotate(45deg);
+  z-index: 10;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.aw-arrow:hover {
+  cursor: pointer;
+  animation: pulsate 1s ease-in-out;
+  -webkit-animation: pulsate 1s ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+.aboutme {
+  text-align: center;
+}
+.aboutme-header {
+  font-size: 50px;
+  margin-top: 50px;
+  background: -webkit-linear-gradient(-360deg, orange, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+.aboutme-p {
+  text-indent: 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  width: 35%;
+  margin: 0 auto;
+  line-height: 250%;
+  font-size: 16px;
+}
+
+.skills {
+  margin-top: 50px;
+  text-align: center;
+}
+.skills-header {
+  background: -webkit-linear-gradient(-360deg, orange, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+  font-size: 50px;
+}
+
+.skills-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+  width: 100%;
+}
+.skills-h3 {
+  background: -webkit-linear-gradient(-360deg, blue, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+.skills-list {
+  margin: 0px;
+  padding: 0px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+.skills-list img {
+  width: 100px;
+  height: 100px;
+}
+.contact-me-div {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 300px;
+}
+
+.contact-me-h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(-360deg, orange, blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.contact-me-subject {
+  margin: 0 auto;
+  width: 100%;
+  border: 2px solid gray;
+  border-width: 0 0 2px 0;
+  height: 20px;
+}
+.contact-me-textfield {
+  margin: 0 auto;
+  border: 2px solid gray;
+
+  padding: 0;
+  width: 100%;
+  height: 150px;
+}
+.contact-me-button {
+  width: 70px;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+
+.message-sent {
+  text-align: center;
+  color: red;
+}
+
+.projects {
+  width: 100%;
+  height: 100%;
+}
+.projects-h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin: 0;
+}
+
+.burgerBuilder {
+  font-family: "Open Sans", "san-serif";
+}
+/* Animations */
+
+.aw-pulsate {
+  animation: pulsate 4s ease-in-out;
+  -webkit-animation: pulsate 4s ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .aboutme-p {
+    text-indent: 0px;
+    text-align: center;
+  }
+  .contact-me {
+    padding-bottom: 50px;
+  }
+  .nav {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .nav-links {
+    font-size: 10px;
+  }
+  .section {
+    margin-top: 50px;
+  }
+  .section .overlay {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  .aboutme-p {
+    text-align: left;
+    width: 85%;
+  }
+  .skills-ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills-list {
+    margin: 0px auto;
+  }
+  .section-h1 {
+    font-size: 20px;
+  }
+  .contact-me-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: -webkit-linear-gradient(-360deg, orange, blue);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .projects-h1{
+    padding:0;
+    padding-top: 15%;
+    
+  }
+}
