@@ -17,6 +17,13 @@ mongoose
   .then(console.log("DB connected"))
   .catch(err => console.log(err));
 
+app.use(express.static("client1/build"));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, 'client1', 'build', 'index.html'))
+})
+
+
 app.listen(port, err => {
   if (err) {
     console.log(err);
@@ -25,10 +32,4 @@ app.listen(port, err => {
   }
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, 'client1', 'build', 'index.html'))
-})
-
-
 app.use(messageRoute);
-app.use(express.static("client1/build"));
