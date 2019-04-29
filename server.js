@@ -26,9 +26,9 @@ app.listen(port, err => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'))
+  res.sendFile(path.join(__dirname, 'client1', 'build', 'index.html'))
 })
 
 
 app.use(messageRoute);
-app.use(express.static("client/build"));
+app.use(express.static("client1/build"));
