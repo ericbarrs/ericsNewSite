@@ -216,6 +216,10 @@ body {
 	flex-direction: column;
 	margin: 50px auto;
 	width: 300px;
+	border: black solid 3px;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: -1em -1em 3em rgba(0, 100, 50, 0.9), 3px -2px;
 }
 
 .contact-me-h1 {
