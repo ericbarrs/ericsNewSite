@@ -248,7 +248,8 @@ body {
 	margin: 20px auto;
 	border-radius: 10px;
 	margin-bottom: 30px;
-	background: -webkit-linear-gradient(-360deg, orange, blue);
+	background: green;
+	color: white;
 }
 
 .message-sent {
@@ -332,7 +333,6 @@ body {
 		width: 100%;
 		height: 40px;
 		border: none;
-		background: -webkit-linear-gradient(-360deg, orange, blue);
 		font-size: 20px;
 		font-weight: bold;
 	}
