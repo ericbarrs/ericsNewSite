@@ -222,6 +222,31 @@ body {
 	box-shadow: -1em -1em 3em rgba(0, 100, 50, 0.9), 3px -2px;
 }
 
+.contact-me-div label {
+	margin: 0;
+	margin-top: 10px;
+	text-align: center !important;
+}
+
+.contact-me-div input:focus {
+	outline-style: none;
+}
+
+.contact-me-div input:focus,
+textarea:focus {
+	transition: 3s;
+}
+
+.contact-me-div input::placeholder,
+textarea::placeholder {
+	transition: 1s;
+}
+
+.contact-me-div input:focus::placeholder,
+textarea:focus::placeholder {
+	color: transparent;
+}
+
 .contact-me-h1 {
 	font-size: 50px;
 	background: -webkit-linear-gradient(-360deg, orange, blue);
@@ -257,6 +282,10 @@ body {
 }
 
 .message-sent {
+	position: absolute;
+	right: 3em;
+	bottom: 3em;
+	transition: ease-in-out 3s;
 	text-align: center;
 	color: red;
 }
@@ -299,7 +328,7 @@ body {
 	}
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
 	.aboutme-p {
 		text-indent: 0px;
 		text-align: center;
@@ -343,5 +372,11 @@ body {
 	.projects-h1 {
 		padding: 0;
 		padding-top: 15%;
+	}
+	.message-sent {
+		position: static;
+		transition: ease-in-out 3s;
+		text-align: center;
+		color: red;
 	}
 }
