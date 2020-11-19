@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import image from "../img/img1.jpg";
 
 export default class Section extends React.Component {
 	render() {
@@ -14,7 +15,7 @@ export default class Section extends React.Component {
 				</div>
 
 				<img
-					src={require("../img/img1.jpg")}
+					src={image}
 					alt="backgrond"
 					style={{ display: "block", width: "100%" }}
 				/>
