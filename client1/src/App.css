@@ -7,8 +7,15 @@ body {
 	width: 100%;
 }
 .card {
+	border: black solid 2px;
 	position: inherit;
 }
+
+.card-body p {
+	min-height: 100px;
+	max-height: 100px;
+}
+
 .Home {
 	position: absolute;
 	z-index: -10;
@@ -296,11 +303,13 @@ textarea:focus::placeholder {
 }
 .projects-h1 {
 	display: flex;
+	font-style: italic;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	padding: 100px;
 	margin: 0;
+	background-color: whitesmoke;
 }
 
 .burgerBuilder {
