@@ -13,8 +13,8 @@ module.exports.send = (req, res) => {
 		apiKey: process.env.NEXMO_API,
 		apiSecret: process.env.NEXMO_SECRET,
 	});
-	const from = "18645981750";
-	const to = "15127840281";
+	const from = process.env.NEXMO_FROM;
+	const to = process.env.NEXMO_TO;
 	newMessage
 		.save()
 		.then(() =>

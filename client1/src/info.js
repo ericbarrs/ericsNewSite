@@ -28,7 +28,7 @@ export const projects = [
 	{
 		image: image4,
 		description:
-			"This App was my final project for ACA. I wanted to be able to save a list of exercise that would display on the users account.",
+			"This App was my final project for ACA. I wanted to be able to save a list of exercises.",
 		name: "Fitness Talk",
 		url: "https://fitnesstalk.herokuapp.com/",
 	},

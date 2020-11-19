@@ -347,6 +347,7 @@ textarea:focus::placeholder {
 	}
 	.nav {
 		background-color: rgba(0, 0, 0, 1);
+		display: block;
 	}
 	.nav-links {
 		font-size: 10px;
@@ -380,7 +381,9 @@ textarea:focus::placeholder {
 	}
 	.projects-h1 {
 		padding: 0;
-		padding-top: 15%;
+		height: 200px;
+		padding-top: 10%;
+		font-size: 4em;
 	}
 	.message-sent {
 		position: static;
