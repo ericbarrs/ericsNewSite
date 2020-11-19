@@ -14,7 +14,7 @@ export default class Section extends React.Component {
 				</div>
 
 				<img
-					src="../img/img1.jpg"
+					src={require("../img/img1.jpg")}
 					alt="backgrond"
 					style={{ display: "block", width: "100%" }}
 				/>
